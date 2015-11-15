@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-var PORT = 3010;
+var PORT = process.env.PORT || 3010;
 
-var middleware = require('/middleware.js')
+var middleware = require('./middleware.js');
 
 //application level middleware
 
